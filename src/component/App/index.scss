@@ -1,7 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   height: 90vh;
   padding: 5rem;
+  color: rgb(212, 212, 212);
 }

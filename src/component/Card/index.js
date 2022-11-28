@@ -1,8 +1,12 @@
 import "./index.scss";
 
 function Card(props) {
+  const handleOnClick = () => {
+    alert(`Id: ${props.id + 1}, Title: ${props.title}`);
+  };
+
   return (
-    <div className="Card">
+    <div onClick={handleOnClick} className="Card">
       <div className="img-wrapper">
         <img src={props.imgUrl} alt="" />
       </div>
